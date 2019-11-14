@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 @NoArgsConstructor
@@ -14,11 +16,12 @@ public class LinkedList<T> {
 
     public boolean isEmpty() {
         // TODO starting point
+        Arrays.asList("A", "B");
         return false;
     }
 
     // TODO implementation
-    public Iterator<T> interator() {
+    public Iterator<T> iterator() {
         return new LinkedListIterator();
     }
 
@@ -39,6 +42,12 @@ public class LinkedList<T> {
         public T next() {
             return null;
         }
+
+        @Override
+        public void remove() {
+
+        }
+
     }
 
 }

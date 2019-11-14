@@ -14,7 +14,6 @@ Single linked list
 * add head node
 * constructor - list as parameter
 * remove(Int pos)
-* iterator - remove
 * clear
 * detect loop
 
