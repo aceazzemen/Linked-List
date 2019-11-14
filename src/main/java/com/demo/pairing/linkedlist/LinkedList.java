@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 import java.util.Iterator;
 
 @NoArgsConstructor
-@RequiredArgsConstructor
 public class LinkedList<T> {
     @Getter
     private Node<T> head;
