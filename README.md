@@ -17,6 +17,7 @@ Single linked list
 * iterator - remove
 * clear
 * detect loop
+
 Upgrade to Double linked list
 * add back
 
