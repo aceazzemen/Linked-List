@@ -1,11 +1,11 @@
 package com.demo.pairing.linkedlist;
 
-import com.demo.pairing.linkedlist.LinkedList;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class LinkedListTest {
     @Test
-    public void linkListCanBeConstructed(){
-        new LinkedList();
+    public void givenEmptyListWhenCheckingEmptyThenTrue(){
+        Assertions.assertTrue(new LinkedList().isEmpty());
     }
 }
