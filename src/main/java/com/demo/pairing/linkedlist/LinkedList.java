@@ -1,11 +1,8 @@
 package com.demo.pairing.linkedlist;
 
-import lombok.*;
 import java.util.Iterator;
 
-@NoArgsConstructor
 public class LinkedList<T> {
-    @Getter
     private Node<T> head;
 
     public boolean isEmpty() {
@@ -18,10 +15,8 @@ public class LinkedList<T> {
     }
 
     private static class Node<T> {
-        @Getter
         private T value;
-        @Getter
-        @Setter
+
         private Node<T> next;
 
         Node(T value) {
@@ -30,6 +25,22 @@ public class LinkedList<T> {
 
         Node(T value, Node<T> next) {
             this.value = value;
+            this.next = next;
+        }
+
+        public T getValue() {
+            return value;
+        }
+
+        public void setValue(T value) {
+            this.value = value;
+        }
+
+        public Node<T> getNext() {
+            return next;
+        }
+
+        public void setNext(Node<T> next) {
             this.next = next;
         }
     }
